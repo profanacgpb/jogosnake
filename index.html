@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — Tecinfo</title>
+  <link rel="stylesheet" href="styles.css"> <!-- compile styles.scss → styles.css -->
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <h1>Snake</h1>
+      <div class="score">Pontuação: <span id="score">0</span></div>
+    </header>
+
+    <main>
+      <!-- canvas onde o jogo vai desenhar -->
+      <canvas id="game" width="400" height="400" aria-label="Tela do jogo Snake"></canvas>
+
+      <div class="controls">
+        <button id="start">Iniciar</button>
+        <button id="pause">Pausar</button>
+        <button id="restart">Reiniciar</button>
+
+        <label for="speed">Velocidade</label>
+        <select id="speed">
+          <option value="160">Lento</option>
+          <option value="120" selected>Médio</option>
+          <option value="80">Rápido</option>
+          <option value="50">Muito Rápido</option>
+        </select>
+      </div>
+
+      <p class="hint">Use ← ↑ → ↓ ou WASD para controlar.</p>
+    </main>
+
+    <footer>
+      <small>Tecinfo — Exemplo didático</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
